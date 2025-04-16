@@ -1,43 +1,43 @@
-# Garagem Inteligente Unificada
+# Garagem Inteligente
 
-Uma aplicação web interativa que permite gerenciar uma garagem de veículos, demonstrando conceitos de Programação Orientada a Objetos (POO), armazenamento local e interface do usuário dinâmica.
+Uma aplicação web interativa para gerenciar uma garagem de veículos, demonstrando conceitos de Programação Orientada a Objetos (POO), persistência de dados e interface de usuário dinâmica.
 
 ## Visão Geral
 
-Este projeto apresenta uma simulação de uma garagem, onde o usuário pode adicionar, visualizar e interagir com diferentes tipos de veículos (Carro, Carro Esportivo, Caminhão). Ele demonstra a aplicação prática de classes e herança em JavaScript (ES6+), persistência de dados usando a API `LocalStorage` do navegador e uma interface responsiva que se adapta às ações do usuário. O projeto foi desenvolvido com foco em boas práticas de organização de código, documentação e fácil compreensão.
+O projeto "Garagem Inteligente" foi desenvolvido para simular o gerenciamento de uma garagem, permitindo ao usuário adicionar, visualizar e interagir com diferentes tipos de veículos (Carro, Carro Esportivo, Caminhão). Ele serve como um exemplo prático de como implementar classes, herança, polimorfismo e encapsulamento em JavaScript (ES6+). A aplicação utiliza a API `LocalStorage` para persistir os dados dos veículos, garantindo que as informações sejam mantidas mesmo após o fechamento do navegador. A interface do usuário (UI) é dinâmica, atualizando-se em tempo real para refletir as ações do usuário e o estado dos veículos, focando em uma experiência de uso intuitiva.
 
 ## Funcionalidades Principais
 
 *   **Adicionar Veículos:**
-    *   Permite adicionar diferentes tipos de veículos: Carro, Carro Esportivo e Caminhão.
-    *   Cada tipo de veículo possui atributos específicos (ex: número de portas, capacidade de carga).
+    *   Adiciona Carros, Carros Esportivos e Caminhões.
+    *   Campos específicos para cada tipo (número de portas, turbo, capacidade de carga).
+    *   Validação de dados.
 *   **Listar Veículos:**
-    *   Exibe uma lista dos veículos presentes na garagem.
-    *   Exibe informações básicas de cada veículo (placa, modelo, cor, status).
+    *   Exibe a lista de veículos cadastrados.
+    *   Mostra informações básicas (placa, modelo, cor, status).
 *   **Detalhes e Interação:**
-    *   Visualização detalhada de um veículo selecionado.
-    *   Ações de interação: Ligar/Desligar, Acelerar, Frear, Buzinar.
-    *   Ações específicas por tipo:
-        *   Carro Esportivo: Ativar/Desativar Turbo.
-        *   Caminhão: Carregar/Descarregar carga.
+    *   Tela de detalhes com informações completas.
+    *   Interação com: Ligar/Desligar, Acelerar, Frear, Buzinar.
+    *   Ações específicas por tipo (Turbo, Carregar/Descarregar).
 *   **Gerenciamento de Manutenção:**
-    *   Permite agendar manutenções futuras para cada veículo (data, tipo de serviço, custo, descrição).
-    *   Exibe o histórico de manutenções realizadas.
-    *   Exibe os agendamentos futuros.
-*   **Persistência de Dados:**
-    *   Utiliza a API `LocalStorage` para salvar e carregar os dados da garagem, garantindo a persistência dos veículos mesmo após o fechamento do navegador.
-*   **Interface do Usuário (UI) Dinâmica:**
-    *   A interface é atualizada em tempo real para refletir as ações do usuário e o estado dos veículos.
-    *   Utiliza notificações para fornecer feedback ao usuário.
+    *   Agendamento de manutenções (data, tipo, custo, descrição).
+    *   Exibição do histórico e agendamentos futuros.
+*   **Persistência de Dados (LocalStorage):**
+    *   Salva e carrega dados da garagem (veículos e estado).
+    *   Tratamento de erros na carga dos dados.
+*   **UI Dinâmica:**
+    *   Atualização da interface em tempo real.
+    *   Feedback visual e notificações.
+*   **Lembretes de Manutenção:**
+    *   Notificações de manutenções agendadas.
 
 ## Tecnologias Utilizadas
 
-*   **HTML5:** Para a estrutura da página.
-*   **CSS3:** Para a estilização e layout responsivo.
+*   **HTML5:** Estrutura da página.
+*   **CSS3:** Estilização e layout responsivo.
 *   **JavaScript (ES6+):**
-    *   Programação Orientada a Objetos (Classes, Herança, Polimorfismo, `super()`).
-    *   Manipulação do DOM (Seleção de elementos, Event Listeners, Atualização dinâmica).
-    *   `LocalStorage API` para persistência de dados.
-    *   Arrow functions, template literals, `let`/`const`.
-
-## Estrutura do Projeto
+    *   Programação Orientada a Objetos (Classes, Herança, Polimorfismo).
+    *   Manipulação do DOM.
+    *   `LocalStorage API`.
+    *   Template literals, `const`/`let`, arrow functions, tratamento de erros.
+*   **JSDoc:** Documentação do código.
